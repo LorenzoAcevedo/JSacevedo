@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Math Quiz</title>
 </head>
-<body>
+<body class="body">
+    <section class="lobby">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="logo" class="logo-inner">
+        </div>
+        <div class="text">
+            <h4>Quiz Matematico</h4>
+        </div>
+    </section>
+    <section class="quiz">
+        <div class="questions">
+            <p>Ingrese su nombre de usuario</p>
+            <input type="button" value="sumbit">
+            <p>Ingrese su edad</p>
+            <input type="button" value="sumbit">
+            <p>Ingrese su nacionalidad</p>
+            <input type="button" value="sumbit">
+        </div>
+        <div class="ansers">
+            <p>cuanto es 2 + 2</p>
+            <input type="text">
+            <input type="button" value="sumbit">
+            <p>coloca un numero positivo</p>
+            <input type="text">
+            <input type="button" value="sumbit">
+            <p>coloca un numero negativo</p>
+            <input type="text">
+            <input type="button" value="sumbit">
+        </div>
+    </section>
     <script src="./js/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 let nombreUsuario = prompt("Ingrese su nombre de usuario");
 alert("Bienvenido " + nombreUsuario);
+let edad = prompt("Ingrese su edad");
+let pais = prompt("Ingrese su nacionalidad");
 let respuesta1 = prompt("cuanto es 2 + 2");
 if (respuesta1 == 4 ) {
     alert("Felicidades! " + nombreUsuario + " la respuesta es correcta");
@@ -19,3 +21,9 @@ if (respuesta3 < 0 ) {
     alert("La respuesta es incorrecta " + nombreUsuario);
 }
 alert("Felicidades terminaste el quiz!")
+function Usuario(nombre,edad,pais){
+    this.nombre = nombre
+    this.edad   = edad
+    this.pais   = pais
+}
+const usuario = new Usuario(nombreUsuario, edad, pais)

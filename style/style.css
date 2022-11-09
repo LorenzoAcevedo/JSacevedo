@@ -1,0 +1,34 @@
+.body{
+    background-color: aquamarine;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.quiz{
+    display: flex;
+    align-items: center;
+}
+.logo-inner{
+    height: 30%;
+    width: 30%;
+    border-radius: 20%;
+}
+.text{
+    font-family:'Poppins', sans-serif;
+}
+.text input{
+    border-radius: 20%;
+}
+.quiz{
+    display: flex;
+    align-items: center;
+}
+.questions{
+    font-family:'Poppins', sans-serif;
+    padding: 5rem;
+}
+.ansers{
+    font-family:'Poppins', sans-serif;
+    padding: 5rem;
+}
