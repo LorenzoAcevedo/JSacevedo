@@ -1,5 +1,7 @@
-let nombreUsuario = prompt("Ingrese su nombre de usuario");
+nombreUsuario = prompt("Ingrese su nombre de usuario");
+localStorage.setItem("usuario", nombreUsuario)
 alert("Bienvenido " + nombreUsuario);
+const usuarioJSON = JSON.stringify(nombreUsuario)
 let edad = prompt("Ingrese su edad");
 let pais = prompt("Ingrese su nacionalidad");
 let respuesta1 = prompt("cuanto es 2 + 2");
@@ -20,10 +22,18 @@ if (respuesta3 < 0 ) {
 } else {
     alert("La respuesta es incorrecta " + nombreUsuario);
 }
-alert("Felicidades terminaste el quiz!")
+alert("Felicidades terminaste el quiz!");
 function Usuario(nombre,edad,pais){
     this.nombre = nombre
     this.edad   = edad
     this.pais   = pais
 }
-const usuario = new Usuario(nombreUsuario, edad, pais)
+const usuario = new Usuario(nombreUsuario, edad, pais);
+const contenido = document.querySelector(".logo-inner");
+console.log(contenido);
+const colorButton = document.querySelector("#color-mode");
+const body = document.querySelector("body");
+colorButton.addEventListener("click", cambiarColor);
+function cambiarColor() {
+    body.classList.toggle("dark-mode")
+}
