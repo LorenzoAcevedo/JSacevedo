@@ -3,12 +3,10 @@
 }
 .body{
     background-color: aquamarine;
+    display: grid;
+    place-items: center;
 }
 .logo{
-    display: flex;
-    align-items: center;
-}
-.quiz{
     display: flex;
     align-items: center;
 }
@@ -23,15 +21,8 @@
 .text input{
     border-radius: 20%;
 }
-.quiz{
+.lobby{
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-.questions{
-    font-family:'Poppins', sans-serif;
-    padding: 5rem;
-}
-.ansers{
-    font-family:'Poppins', sans-serif;
-    padding: 5rem;
 }
